@@ -3,9 +3,9 @@ function sleep(ms =0){
 }
 
 async function test(){
- for (let i=0;i<10;i++){
+ for (let i=10;i>0;i--){
 	await sleep(500);
-	console.log('i=${i}');}
+	console.log(`i=${i}`);}
 }
 
 test().then(()=>console.log('done'));
